@@ -1,0 +1,309 @@
+/* CSS Reset */
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset typography */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    font-family:"Raleway", sans-serif;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    
+    height: 100vh;
+    background-size: cover;
+    background-color: rgb(16, 16, 16);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+.header {
+    display: flex;
+
+    padding: 1rem 3rem;
+
+}
+
+
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+
+
+}
+
+
+
+nav ul li a {
+    
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    transition: 100ms ease-in-out;
+    padding: .7rem;
+    border-radius: .7rem;
+
+
+}
+
+nav ul li a:hover {
+    color: #C94E5E;
+    background-color: rgb(30, 38, 48);
+
+
+
+
+
+
+    
+    
+
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+
+
+
+
+label {
+    position: relative;
+    margin-left: auto;
+    margin-right: 4rem;
+    width: 20%;
+    height: 2rem;
+}
+
+.gradient-text {
+    background: #4B6AE6;
+    background: linear-gradient(to right, #4B6AE6 0%, #A0559A 50%, #C94E5E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 6rem;
+
+}
+
+
+
+
+.contact-btn {
+    margin-left: auto;
+    margin-right: 4rem;
+    padding: .6rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    background-color: #C94E5E;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: #de125d;
+}
+
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: 1/1/1/3;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin: 4rem 3rem 3rem 3rem;
+
+
+
+
+    
+}
+
+.github {
+    margin-top: 4rem;
+
+
+}
+
+.github-scroll {
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+
+
+}
+
+.contact-github {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+.images {
+    margin-top: 2rem;
+}
+
+.t-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr 1fr;
+    }
+
+    .header {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        grid-area: 1/1/2/2;
+       
+
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: 2/1/3/2;
+    }
+
+    .logo {
+       margin: 0 5px;
+       padding: 2px;
+    }
+
+    .contact-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 1rem;
+        padding: .3rem .7rem;
+        border: none;
+        border-radius: .5rem;
+        color: white;
+        background-color: #C94E5E;
+        cursor: pointer;
+        transition: 200ms ease-in-out;
+
+
+
+    }
+
+    .gradient-text {
+        font-size: 2.5rem;
+    }
+
+    .t-image {
+        width: 2.5rem;
+        height: 2.5rem;
+
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display:inline;
+        margin: .5rem;
+        padding: 0;
+    }
+
+    .section-1 {
+        margin-top: 2rem;
+    }
+
+
+    
+
+
+
+   
+
+    
+
+    
+}
+
+
+
+
+
+
+
+
